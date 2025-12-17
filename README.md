@@ -2,7 +2,7 @@
 
 Este projeto é um protótipo funcional de um Sistema de Gestão da Qualidade (SGQ) baseado na norma **ISO 9001:2015**, desenvolvido no âmbito da unidade curricular de Engenharia de Requisitos.
 
-O sistema permite a gestão de Não Conformidades (NC), Planos de Ação Corretiva (PAC), Documentação e Indicadores de Desempenho (KPIs), com controlo de acessos baseado em perfis (RBAC).
+O sistema permite a gestão de Não Conformidades (NC), Planos de Ação Corretiva (PAC) e Documentação de Indicadores de Desempenho (KPIs).
 
 ---
 
