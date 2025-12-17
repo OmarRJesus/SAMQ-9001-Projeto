@@ -1,0 +1,18 @@
+# --- DEPENDÊNCIAS (Backend e Frontend) ---
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json # (Opcional: Podes manter se quiseres garantir versões exatas, mas para projetos escolares podes ignorar para evitar conflitos)
+
+# --- BUILD (React) ---
+dist/
+build/
+
+# --- AMBIENTE E SEGURANÇA ---
+.env
+.env.local
+.DS_Store
+
+# --- IDEs ---
+.vscode/
+.idea/

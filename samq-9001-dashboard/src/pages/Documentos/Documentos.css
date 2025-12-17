@@ -1,0 +1,110 @@
+/* src/pages/Documentos/Documentos.css */
+
+/* Cartão Branco do Formulário */
+.doc-form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px; /* Cantos mais arredondados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra suave */
+    margin-bottom: 30px;
+    border: 1px solid #eee; /* Borda subtil */
+}
+
+.doc-form-card h3 {
+    margin-top: 0;
+    color: #2c3e50; /* Azul escuro do Dashboard */
+    font-size: 1.2rem;
+    border-bottom: 2px solid #f4f7f6;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- NOVO LAYOUT (GRID) --- */
+/* Isto vai impedir que os campos fiquem uns em cima dos outros */
+.form-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr; /* Coluna 1 grande, 2 pequena, 3 média */
+    gap: 20px; /* Espaço entre campos */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fcfcfc;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3498db;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1); /* Brilho azul ao clicar */
+}
+
+/* Área do Botão (Separada para não esmagar os inputs) */
+.form-actions {
+    display: flex;
+    justify-content: flex-end; /* Alinha o botão à direita */
+}
+
+.btn-submit {
+    background-color: #27ae60; /* Verde do Dashboard */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(39, 174, 96, 0.2);
+}
+
+.btn-submit:hover {
+    background-color: #2ecc71;
+    transform: translateY(-1px);
+}
+
+.btn-submit:active {
+    transform: translateY(1px);
+}
+
+/* Botão de Aprovação na tabela */
+.btn-approve {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.btn-approve:hover {
+    background-color: #2980b9;
+}

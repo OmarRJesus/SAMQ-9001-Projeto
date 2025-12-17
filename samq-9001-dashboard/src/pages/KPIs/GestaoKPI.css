@@ -1,0 +1,84 @@
+/* src/pages/KPIs/GestaoKPI.css */
+
+/* Cartão Genérico (usado tanto no Formulário como na Tabela para ficarem iguais) */
+.kpi-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    width: 100%; /* Ocupa a largura total disponível */
+    box-sizing: border-box; /* Garante que o padding não aumenta a largura */
+}
+
+.kpi-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #f4f7f6;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Layout do Formulário em Linha */
+.kpi-form-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end; /* Alinha o botão com as caixas de texto na base */
+}
+
+/* Grupos de Inputs */
+.kpi-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.kpi-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-size: 0.9rem;
+}
+
+.kpi-group input,
+.kpi-group select {
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fcfcfc;
+    transition: all 0.3s;
+    height: 48px; /* Altura fixa para ficarem todos iguais */
+    box-sizing: border-box;
+}
+
+.kpi-group input:focus,
+.kpi-group select:focus {
+    border-color: #8e44ad; /* Roxo (tema KPI) */
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(142, 68, 173, 0.1);
+}
+
+/* Botão Registar */
+.btn-kpi-submit {
+    background-color: #8e44ad; /* Roxo */
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 48px; /* Mesma altura dos inputs */
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Impede o texto de quebrar */
+}
+
+.btn-kpi-submit:hover {
+    background-color: #732d91;
+}

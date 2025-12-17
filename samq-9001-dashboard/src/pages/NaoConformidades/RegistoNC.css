@@ -1,0 +1,126 @@
+/* src/pages/NaoConformidades/RegistoNC.css */
+
+/* O cartão branco principal */
+.nc-form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    max-width: 900px; /* Limita a largura para não ficar muito esticado */
+    margin: 0 auto;
+}
+
+.nc-form-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #f4f7f6;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Layout do Formulário */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-size: 0.9rem;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fcfcfc;
+    transition: all 0.3s;
+    font-family: inherit; /* Garante que a fonte é igual no textarea */
+    resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #3498db;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* Grid para a linha de baixo (Origem e Risco lado a lado) */
+.form-row-split {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* A origem ocupa o dobro do espaço do risco */
+    gap: 20px;
+}
+
+/* Estilização específica do Risco para dar feedback visual */
+.select-risco {
+    border-left: 5px solid #ccc; /* Linha colorida à esquerda */
+}
+.select-risco.baixo { border-left-color: #27ae60; }
+.select-risco.médio { border-left-color: #f39c12; }
+.select-risco.alto { border-left-color: #c0392b; }
+
+.help-text {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+/* Botões */
+.nc-form-actions {
+    display: flex;
+    justify-content: center; /* <--- MUDANÇA AQUI (antes estava flex-end) */
+    gap: 20px; /* Aumentei um pouco o espaço entre eles para ficar mais elegante */
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #f4f7f6; /* Opcional: uma linha subtil para separar o formulário dos botões */
+}
+
+.btn-submit {
+    background-color: #e74c3c; /* Vermelho/Laranja (Cor de alerta para NCs) */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(231, 76, 60, 0.2);
+    transition: transform 0.1s;
+}
+
+.btn-submit:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+}
+
+.btn-cancel {
+    background-color: transparent;
+    color: #7f8c8d;
+    border: 1px solid #bdc3c7;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-cancel:hover {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
